@@ -1,3 +1,6 @@
+// Name: Rafaeatul Kabir
+// ID: C0888535
+
 //hardcoded exchange rate
 const exchangeRate = 1.36;
 //setting the default values
