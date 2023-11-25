@@ -1,0 +1,25 @@
+.banner{
+    background-color: #2e86de;
+    color: white;
+    padding: 1rem;
+}
+.form{
+    display: flex;
+    margin: 1rem;
+    align-items: center;
+}
+.flex-item{
+    margin-right: 2rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group label{
+    margin-bottom: 5px;
+}
+.form-group input{
+    padding: 10px;
+    border-radius:10px;
+    font-size: large;
+}

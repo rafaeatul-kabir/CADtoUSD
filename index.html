@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!--Link for google's material icon set-->
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>US Doller to Canadian Dollar</h1>
+      <h3>Convert USD to CAD in real exchange rate</h3>
+    </div>
+    <div>
+      <form class="form">
+        <div class="form-group flex-item">
+          <label for="usd">USD</label>
+          <input
+            type="text"
+            id="usd"
+            name="usd"
+            class="currency_input"
+            oninput="updateCurrency(this, 'cad', 'usd')"
+          />
+        </div>
+        <span class="material-symbols-outlined flex-item"> swap_horiz </span>
+        <div class="form-group flex-item">
+          <label for="cad">CAD</label>
+          <input
+            type="text"
+            id="cad"
+            name="cad"
+            class="currency_input"
+            oninput="updateCurrency(this, 'usd', 'cad')"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
