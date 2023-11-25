@@ -18,11 +18,12 @@ function formatDecimal(input) {
     }
 }
 
-
+//update currency function
 function updateCurrency(input, targetName, sourceName){
-    console.log("adasd");
+    //calling the format decimal to make sure no bad input is given
     formatDecimal(input);
     let sourceVal = document.getElementById(sourceName).value;
+    //calculating the updated value based on which to which is converting
     let updateVal= targetName=='cad'?sourceVal*exchangeRate:sourceVal/exchangeRate;
     document.getElementById(targetName).value = updateVal.toFixed(2);
 }
